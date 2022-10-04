@@ -29,8 +29,10 @@ foreach($aData as $filename => $data)
 function _setFile($sFileName, $aData)
 {
     $aFileList = array();
-    $aFileList[$sFileName]["define"]     = $aData["define"];
-    $aFileList[$sFileName]["capability"] = $aData["capability"];
+    $aFileList[$sFileName]["define"]        = $aData["define"];
+    $aFileList[$sFileName]["capability"]    = $aData["capability"];
+    $aFileList[$sFileName]["tech"]          = $aData["capability"];
+    $aFileList[$sFileName]["assessment"]    = $aData["capability"];
 
     return $aFileList;
 }
