@@ -31,8 +31,8 @@ function _setFile($sFileName, $aData)
     $aFileList = array();
     $aFileList[$sFileName]["define"]        = $aData["define"];
     $aFileList[$sFileName]["capability"]    = $aData["capability"];
-    $aFileList[$sFileName]["tech"]          = $aData["capability"];
-    $aFileList[$sFileName]["assessment"]    = $aData["capability"];
+    $aFileList[$sFileName]["tech"]          = $aData["tech"];
+    $aFileList[$sFileName]["assessment"]    = $aData["assessment"];
 
     return $aFileList;
 }
